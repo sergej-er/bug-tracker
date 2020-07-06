@@ -1,4 +1,3 @@
-//document.getElementById("main-content").addEventListener("load", fetchBugs);
 const fetchBugs = () => {
   let bugs = JSON.parse(localStorage.getItem("bugs"));
   let bugList = $("#bug-list");
