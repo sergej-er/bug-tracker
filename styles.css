@@ -1,0 +1,84 @@
+:root {
+  --main-bg-color: rgba(35, 37, 38, 1);
+  --secondary-bg-color: rgba(65, 67, 69, 1);
+  --tertiary-bg-color: rgba(255, 255, 255, 0.1);
+  --red: rgb(195, 20, 50);
+  --gray: rgb(51, 51, 51);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: rgb(65, 67, 69);
+  background: linear-gradient(
+    45deg,
+    var(--main-bg-color) 0%,
+    var(--secondary-bg-color) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* PAGE HEADING */
+
+.page-heading {
+  color: white;
+  background-color: var(--tertiary-bg-color);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 32px;
+}
+
+/* MAIN CONTENT */
+
+.main-content {
+  margin: 32px auto;
+}
+
+/* ISSUE CREATION AREA */
+
+.new-bug-container {
+  color: white;
+  background-color: var(--tertiary-bg-color);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.add-btn {
+  color: white;
+  background-color: var(--tertiary-bg-color);
+}
+
+/* BUG LIST */
+
+.bug-list {
+  padding: 16px 0;
+}
+
+.bug-card {
+  background-color: var(--tertiary-bg-color);
+  color: white;
+  margin: 16px 0;
+  border-radius: 8px;
+}
+
+.close-bug-btn,
+.delete-bug-btn {
+  color: white;
+  margin-right: 8px;
+}
+
+.close-bug-btn:hover,
+.delete-bug-btn:hover {
+  color: lightgrey;
+}
+
+.close-bug-btn {
+  background-color: var(--red);
+}
+
+.delete-bug-btn {
+  background-color: var(--gray);
+}

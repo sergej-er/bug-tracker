@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Bug Tracker</title>
+  </head>
+  <body>
+    <div class="container main-content">
+      <h1 class="page-heading">Bug Tracker</h1>
+      <div class="container new-bug-container">
+        <h3>Add New Bug:</h3>
+        <form id="new-bug-form">
+          <div class="form-group">
+            <label for="bug-summary">Summary</label>
+            <input
+              type="text"
+              class="form-control"
+              id="bug-summary"
+              placeholder="One-liner to summarize the bug ..."
+              autocomplete="off"
+            />
+          </div>
+          <div class="form-group">
+            <label for="bug-description">Description</label>
+            <textarea
+              class="form-control"
+              id="bug-description"
+              placeholder="Describe the bug; Steps to reproduce; Expectation vs reality ..."
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="bug-priority">Priority</label>
+            <select class="form-control" id="bug-priority">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="bug-assignment">Assigned To</label>
+            <input
+              type="text"
+              class="form-control"
+              id="bug-assignment"
+              placeholder="Responsible person ..."
+              autocomplete="off"
+            />
+          </div>
+          <button type="submit" class="btn add-btn">Add</button>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="bug-list" id="bug-list"></div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="http://chancejs.com/chance.min.js"></script>
+  </body>
+</html>
